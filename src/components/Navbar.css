@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 3.75rem;
+    background-color: palegreen;
+}
+
+nav img {
+    margin-left: 2rem;
+    width: 4rem;
+    height: 100%;
+}
+
+nav input {
+    width: 30rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 2.5rem;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.dropdown button {
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dp-items {
+    position: absolute;
+    top: 3.35rem;
+    display: none;
+    background-color: white;
+    box-shadow: 1px .5px 4px 5px rgb(219, 215, 215);
+    min-width: 7.5rem;
+    min-height: 7.5rem;
+    border-radius: .5rem;
+}
+
+.dp-items a {
+    text-decoration: none;
+    height: 2.25rem;
+    width: 100%;
+    padding-top: .7rem;
+    color: black;
+    display: block;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+
+.dp-items a:hover {
+    background-color: rgb(78, 192, 63)
+}
+
+.dropdown:hover .dp-items {
+    display: block;
+}
